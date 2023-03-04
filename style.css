@@ -133,9 +133,9 @@ nav .nav-item a{
 @media only screen and (max-width: 767px){
   .banner-bg {
     background-attachment:fixed;
-    background-size: auto;
-    padding-left: -1px;
-    padding-right: -1px;
+    background-size: cover;
+    padding-left: 1px;
+    padding-right: 1px;
     background-position: top center; 
   }  
 }
