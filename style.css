@@ -133,7 +133,7 @@ nav .nav-item a{
 @media only screen and (max-width: 767px){
   .banner-bg {
     background-attachment: fixed;
-    background-size: auto;
+    background-size: 80%;
     padding-left: 1px;
     padding-right: 1px;
   }  
@@ -558,6 +558,15 @@ transform: scale(1.2);
 
 .scrollup i:hover {
   opacity: 1;
+}
+
+     /*   rightside scroll bar   */
+@media only screen and (max-width: 767px){
+  body{
+    padding-left: 1px;
+    padding-left: 1px;
+  }
+      
 }
 
 
