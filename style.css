@@ -136,6 +136,7 @@ nav .nav-item a{
     background-size: 100%;
     padding-left: 1px;
     padding-right: 1px;
+    background-position: top center; 
   }  
 }
 
