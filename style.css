@@ -1,0 +1,559 @@
+
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    font-family: Nova Mono;
+
+}
+
+  /*nav bar background */
+#my-nav{
+    background-color: black;
+}
+
+ /* Home button in nav bar */
+nav .nav-item .nav-link.active{
+    color:  rgb(0, 160, 0);
+}
+  /* all other buttons in nav bar */
+nav .nav-item a{
+    font-family: Montserrat Alternates;
+    font-weight: 600px;
+    font-size: 16px;
+    margin-left: 15px;
+    color: lightgray;
+}
+
+  /* color when hoovering over links in nav bar */
+.navbar-nav li.nav-item:hover > a.nav-link {
+    color: lightgreen; 
+    }
+    
+      /* My first name in nav bar */
+    .navbar-brand.logo .first-name{
+    font-weight: bold;
+    font-family: Montserrat Alternates;
+    color: rgb(0, 160, 0);
+}
+
+      /* My last name in nav bar */
+    .navbar-brand.logo .last-name{
+    font-weight: bold;
+    font-family: Montserrat Alternates;
+    color:  lightgreen;
+}
+
+  /*  nav bar button color when viewing from phone */
+.navbar-toggler{
+    background-color: lightgreen;
+}
+
+/* home banner section */
+.home-banner {
+  position: relative;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/timp2.jpg');
+  background-size: cover;
+  background-position: center center; 
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: -1;
+}
+
+
+  /* right side of banner */
+.home-banner .right{
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+/* right banner image */
+.home-banner .right img{
+    max-width: 80%;
+    margin-bottom: -3px;
+    max-height: auto; 
+    position: relative;
+    z-index: 1;
+    border-radius: 100%;
+    
+}
+
+/*left banner*/
+.home-banner .left{
+  font-family: Montserrat Alternates;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  border: 2px solid black;
+}
+.home-banner .left h4{
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.home-banner .left h2{
+  font-weight: 700;
+  font-size: 34px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.home-banner .left h3{
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.home-banner .left p{
+  font-size: 16px;
+
+}
+.home-banner .left .button a{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border-radius: 100%;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+.home-banner .left .button a:hover{
+  background-color: gray;
+  color: black;
+}
+
+/*       Banner Mobile responsiveness    */
+
+
+@media only screen and (max-width: 767px){
+  .home-banner .left{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 65px;
+  }
+  .home-banner .right{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .home-banner .left{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 85px;
+  }
+  .home-banner .right{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 428px){
+  .home-banner .left{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+  .home-banner .right{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 414px){
+  .home-banner .left{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+  .home-banner .right{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 390px){
+  .home-banner .left{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 3px;
+  }
+  .home-banner .right{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .home-banner .left{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 3px;
+  }
+  .home-banner .right{
+    text-align: center;
+  }
+}
+
+/*About section*/
+.home-about{
+  background-color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.home-about .right h3{
+  font-family: Montserrat Alternates;
+  color: rgb(0, 160, 0);
+  font-size: 16px;
+}
+.home-about .right h2{
+  font-family: Montserrat Alternates;
+  color: lightgreen;
+  font-size: 34px;
+  font-weight: 700;
+}
+.home-about .right p{
+  font-family: Montserrat Alternates;
+  font-size: 14px;
+  color: lightgreen;
+}
+.home-about .left{
+  text-align: center;
+}
+.home-about .left img{
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.home-about .contact-info table tr td{
+  color: lightgreen;
+  font-size: 14px;
+}
+.home-about .contact-info table tr td:nth-child(1){
+  width: 50px;
+}
+.home-about .contact-info table tr td:nth-child(2){
+  width: 180px;
+}
+.home-about .contact-info table tr td:nth-child(3){
+  width: 180px;
+}
+
+.home-about .social{
+  margin-top: 20px;
+}
+.home-about .social ul{
+  padding-left: 0;
+}
+.home-about .social ul li{
+  list-style-type: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+.home-about .social ul li a{
+  color: black;
+  display: block;
+}
+.home-about .social h3{
+  font-family: Montserrat Alternates;
+  color: rgb(0, 160, 0);
+}
+
+/*THIS IS THE SKILLS SECTION*/
+.home-skill{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: black;
+}
+.home-skill h2{
+  font-family: Montserrat Alternates;
+  color: lightgreen;
+  font-size: 16px;
+  text-align: center;
+}
+.home-skill h3{
+  font-family: Montserrat Alternates;
+  color: lightgreen;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.w-0{
+  width: 0%;
+}
+.home-skill .progress{
+  margin-bottom: 20px;
+}
+.home-skill .progress-text{
+  font-size: 14px;
+  color: lightgreen;
+  font-family: Montserrat Alternates;
+}
+.home-skill .progress-bar{
+  background: rgb(0, 160, 0);
+  color: black;
+}
+
+/*Portfolio section*/
+.portfolio{
+  background-color: black;
+}
+.portfolio h3{
+  font-family: Montserrat Alternates;
+  color: lightgreen;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio .filter ul {
+  text-align: center;
+}
+.portfolio .filter ul li {
+  background: black;
+  color: rgb(0, 160, 0);
+  font-family: Montserrat Alternates;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: -2px;
+  margin-top: 1px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 2px solid rgb(0, 160, 0);
+}
+.portfolio .filter ul li:nth-of-type(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.portfolio .filter ul li:nth-last-of-type(1) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.portfolio .filter ul li.active {
+  background-color: lightgreen;
+  color: black;
+}
+
+.portfolio .filter-items {
+  margin-top: 20px;
+}
+.portfolio .filter-item {
+  width: 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .filter-item .inner {
+  padding: 10px;
+}
+.portfolio .filter-item .photo{
+  overflow: hidden;
+}
+.portfolio .filter-item .photo img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  transition: transform .5s;
+}
+.portfolio .filter-item .photo:hover img {
+transform: scale(1.2);
+}
+.portfolio .filter-item .text h2 {
+  font-size: 16px;
+  margin-top: 1px;
+  font-weight: 500;
+  color:  rgb(0, 160, 0);
+  font-family: Montserrat Alternates;
+  text-align: center;
+}
+
+/*   Portfolio Mobile responsiveness   */
+
+@media only screen and (max-width: 767px){
+  .portfolio .filter ul{
+    padding-left: 0;
+  }
+  .portfolio .filter ul li{
+    display: block;
+    margin-bottom: 10px;
+  }
+  .portfolio .filter-item {
+    width: 100%;
+  }
+  .portfolio .filter .photo img{
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1199px){
+  .portfolio .filter-items .photo img{
+    height: 190px;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .portfolio .filter-items .photo img{
+    height: 140px;
+  }
+}
+
+
+
+/* FOOTER SECTION */
+.footer{
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 40px;  
+}
+
+.footer .description{
+  font-size: 14px;
+  padding-left: 200px;
+  padding-left: 200px;
+  color:  lightgreen;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 200px;
+}
+
+#foot-section .social ul{
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
+}
+
+#foot-section  .social ul li{
+  display: inline-block;
+  list-style-type: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+#foot-section  .social ul li a{
+  display: block;
+}
+
+#social-lin{
+  color: #0077B5;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+
+/* social media link buttons */
+
+#social-lin:hover {
+  background: black;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+
+
+#social-git{
+  color: #181717;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+#social-git:hover {
+  background-color: black;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+
+#social-gram{
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+  border-radius: 50%;
+}
+
+#social-gram:hover {
+  color: #E4405F;
+  background: black;
+  border-radius: 50%;
+}
+
+/*
+#foot-section  .social ul li:hover{
+  background-color: rgb(0, 160, 0);
+}
+
+#foot-section  .social ul li:hover a{
+  color: black;
+  transition: ease .3s;
+}
+
+*/
+
+#foot-section  .copyright{
+  margin-top: 50px;
+  color: rgb(0, 160, 0);
+  text-align: center;
+  font-size: 14px;
+}
+
+/* FOOTER MOBILE RESPONSE */
+
+@media only screen and (max-width: 991px){
+  .footer .description{
+    padding-right: 0;
+    padding-left: 200px;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .footer .description{
+    padding-right: 0;
+    padding-left: 150px;
+  }
+}
+
+/*scroll to top*/
+.scrollup{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: none;
+}
+
+.scrollup i{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgb(0, 160, 0);
+  color: black;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+.scrollup i:hover {
+  opacity: 1;
+}
+
+
+
+
+/* 
+font-family: 'Montserrat Alternates', sans-serif; 
+*/
