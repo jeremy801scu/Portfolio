@@ -13,7 +13,7 @@
 
  /* Home button in nav bar */
 nav .nav-item .nav-link.active{
-    color:  rgb(0, 160, 0);
+    color:  #446879;
 }
   /* all other buttons in nav bar */
 nav .nav-item a{
@@ -21,31 +21,31 @@ nav .nav-item a{
     font-weight: 600px;
     font-size: 16px;
     margin-left: 15px;
-    color: lightgray;
+    color: antiquewhite;
 }
 
   /* color when hoovering over links in nav bar */
 .navbar-nav li.nav-item:hover > a.nav-link {
-    color: lightgreen; 
+    color: #acc8d7; 
     }
     
       /* My first name in nav bar */
     .navbar-brand.logo .first-name{
     font-weight: bold;
     font-family: Montserrat Alternates;
-    color: rgb(0, 160, 0);
+    color: #446879;
 }
 
       /* My last name in nav bar */
     .navbar-brand.logo .last-name{
     font-weight: bold;
     font-family: Montserrat Alternates;
-    color:  lightgreen;
+    color:  #acc8d7;
 }
 
   /*  nav bar button color when viewing from phone */
 .navbar-toggler{
-    background-color: lightgreen;
+    background-color: #acc8d7;
 }
 
 /* home banner section */
@@ -60,7 +60,7 @@ nav .nav-item a{
   width: 100%;
   height: 100%;
   background-image: url('images/timp2.jpg');
-  background-size: cover;
+  background-size: auto;
   background-position: center center; 
   background-attachment: fixed;
   opacity: 1;
@@ -214,19 +214,19 @@ nav .nav-item a{
 }
 .home-about .right h3{
   font-family: Montserrat Alternates;
-  color: rgb(0, 160, 0);
+  color: #acc8d7;
   font-size: 16px;
 }
 .home-about .right h2{
   font-family: Montserrat Alternates;
-  color: lightgreen;
+  color: #446879;
   font-size: 34px;
   font-weight: 700;
 }
 .home-about .right p{
   font-family: Montserrat Alternates;
   font-size: 14px;
-  color: lightgreen;
+  color: #acc8d7;
 }
 .home-about .left{
   text-align: center;
@@ -238,7 +238,7 @@ nav .nav-item a{
 }
 
 .home-about .contact-info table tr td{
-  color: lightgreen;
+  color: #acc8d7;
   font-size: 14px;
 }
 .home-about .contact-info table tr td:nth-child(1){
@@ -272,7 +272,7 @@ nav .nav-item a{
 }
 .home-about .social h3{
   font-family: Montserrat Alternates;
-  color: rgb(0, 160, 0);
+  color: #446879;
 }
 
 /*THIS IS THE SKILLS SECTION*/
@@ -283,13 +283,13 @@ nav .nav-item a{
 }
 .home-skill h2{
   font-family: Montserrat Alternates;
-  color: lightgreen;
+  color: #acc8d7;
   font-size: 16px;
   text-align: center;
 }
 .home-skill h3{
   font-family: Montserrat Alternates;
-  color: lightgreen;
+  color: #446879;
   font-size: 34px;
   font-weight: 700;
   text-align: center;
@@ -303,11 +303,11 @@ nav .nav-item a{
 }
 .home-skill .progress-text{
   font-size: 14px;
-  color: lightgreen;
+  color: #acc8d7;
   font-family: Montserrat Alternates;
 }
 .home-skill .progress-bar{
-  background: rgb(0, 160, 0);
+  background: #446879;
   color: black;
 }
 
@@ -317,7 +317,7 @@ nav .nav-item a{
 }
 .portfolio h3{
   font-family: Montserrat Alternates;
-  color: lightgreen;
+  color: #446879;
   font-size: 34px;
   font-weight: 700;
   text-align: center;
@@ -329,7 +329,7 @@ nav .nav-item a{
 }
 .portfolio .filter ul li {
   background: black;
-  color: rgb(0, 160, 0);
+  color: #acc8d7;
   font-family: Montserrat Alternates;
   padding: 10px 20px;
   display: inline-block;
@@ -340,7 +340,7 @@ nav .nav-item a{
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  border: 2px solid rgb(0, 160, 0);
+  border: 2px solid #446879;
 }
 .portfolio .filter ul li:nth-of-type(1) {
   border-top-left-radius: 10px;
@@ -355,7 +355,7 @@ nav .nav-item a{
   border-bottom-right-radius: 50px;
 }
 .portfolio .filter ul li.active {
-  background-color: lightgreen;
+  background-color: #acc8d7;
   color: black;
 }
 
@@ -386,7 +386,7 @@ transform: scale(1.2);
   font-size: 16px;
   margin-top: 1px;
   font-weight: 500;
-  color:  rgb(0, 160, 0);
+  color:  #acc8d7;
   font-family: Montserrat Alternates;
   text-align: center;
 }
@@ -434,7 +434,7 @@ transform: scale(1.2);
   font-size: 14px;
   padding-left: 200px;
   padding-left: 200px;
-  color:  lightgreen;
+  color:  #acc8d7;
   margin-bottom: 20px;
   text-align: center;
   margin-right: 200px;
@@ -462,14 +462,15 @@ transform: scale(1.2);
   display: block;
 }
 
+
+/* social media link buttons */
+
 #social-lin{
   color: #0077B5;
   background-color: #FFFFFF;
   border-radius: 50%;
 }
 
-
-/* social media link buttons */
 
 #social-lin:hover {
   background: black;
@@ -516,7 +517,7 @@ transform: scale(1.2);
 
 #foot-section  .copyright{
   margin-top: 10px;
-  color: rgb(0, 160, 0);
+  color: #446879;
   text-align: center;
   font-size: 14px;
 }
@@ -551,7 +552,7 @@ transform: scale(1.2);
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background-color: rgb(0, 160, 0);
+  background-color: #446879;
   color: black;
   border-radius: 50%;
   opacity: .5;
@@ -562,8 +563,6 @@ transform: scale(1.2);
 }
 
      /*   rightside scroll bar   */
-
-
 
 
 /* 
