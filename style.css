@@ -305,6 +305,12 @@ nav .nav-item a{
 
 /*    skills-carousel    */
 
+#skillcar{
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+}
+
 .skills-carousel .item {
   text-align: center;
   border-start-start-radius: 80%;
@@ -350,6 +356,14 @@ nav .nav-item a{
 
 .skills-carousel .owl-nav{
   display: none;
+}
+
+@media only screen and (max-width: 767px){
+  #skillcar{
+    max-width: 300px;
+    max-height: 200px;
+    margin: auto;
+  }
 }
 
 /*Portfolio section*/
