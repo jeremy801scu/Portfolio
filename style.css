@@ -287,6 +287,13 @@ nav .nav-item a{
   background-color: black;
 }
 
+.home-skill h2{
+  font-family: Montserrat Alternates;
+  color: #acc8d7;
+  font-size: 16px;
+  text-align: center;
+}
+
 .home-skill h3{
   font-family: Montserrat Alternates;
   color: #446879;
@@ -322,8 +329,7 @@ nav .nav-item a{
 .skills-carousel .comments{
   color: #acc8d7;
   font-family: Montserrat Alternates;
-  font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -598,8 +604,21 @@ transform: scale(1.2);
   opacity: 1;
 }
 
-     /*   rightside scroll bar   */
 
+/* width of scrollbar */
+::-webkit-scrollbar {
+color: #446879;
+}
+
+/* background color of scrollbar */
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+/* color of scrollbar thumb */
+::-webkit-scrollbar-thumb {
+color: #446879;
+}
 
 /* 
 font-family: 'Montserrat Alternates', sans-serif; 
