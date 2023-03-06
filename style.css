@@ -4,11 +4,6 @@ html{
 
 }
 
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
 .dropdown:hover .dropdown-menu{
     display: block;
     font-family: Nova Mono;
@@ -62,18 +57,16 @@ nav .nav-item a{
   position: relative;
 }
 
-.banner-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/timp2.jpg');
-  background-size: auto;
-  background-position: center center; 
+.home-banner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: black;
+  background-image: url(images/matrixblue.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 1;
-  z-index: -1;
+  position: relative;
 }
 
 
@@ -289,35 +282,71 @@ nav .nav-item a{
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: black;
+  background-image: url(images/matrixblue.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
-.home-skill h2{
-  font-family: Montserrat Alternates;
-  color: #acc8d7;
-  font-size: 16px;
-  text-align: center;
-}
+
 .home-skill h3{
   font-family: Montserrat Alternates;
-  color: #446879;
+  color: black;
   font-size: 34px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
-.w-0{
-  width: 0%;
+
+/*    skills-carousel    */
+
+.skills-carousel .item {
+  text-align: center;
+  border-start-start-radius: 80%;
+  border-start-end-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 80%;
 }
-.home-skill .progress{
-  margin-bottom: 20px;
+
+.skills-carousel .photo img{
+  text-align:center;
+  border-start-start-radius: 80%;
+  border-start-end-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 80%;
+  background-color: antiquewhite;
+  height: 200px;
+  width: 100px;
+  border: solid;
+  border-color: black;
 }
-.home-skill .progress-text{
-  font-size: 14px;
-  color: #acc8d7;
-  font-family: Montserrat Alternates;
-}
-.home-skill .progress-bar{
-  background: #446879;
+
+.skills-carousel .comments{
   color: black;
+  font-family: Montserrat Alternates;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.skills-carousel .owl-dot{
+  margin-top: 20px;
+}
+
+.skills-carousel .owl-dot span {
+  background: black!important;
+  width: 15px!important;
+  height: 15px!important;
+  margin: 5px 3px!important;
+}
+.skills-carousel .owl-dot.active span {
+  background: #507dcb!important;
+}
+
+.skills-carousel .owl-nav{
+  display: none;
 }
 
 /*Portfolio section*/
@@ -331,6 +360,7 @@ nav .nav-item a{
   font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .portfolio .filter ul {

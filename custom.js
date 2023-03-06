@@ -1,21 +1,29 @@
 $(document).ready(function(){
     
-    // Progress Bar Animation
-    $(".w-80-p").animate({
-        width: "80%"
-    }, 2500);
-
-    $(".w-90-p").animate({
-        width: "90%"
-    }, 2500);
-
-    $(".w-60-p").animate({
-        width: "50%"
-    }, 2500);
-
-    $(".w-50-p").animate({
-        width: "50%"
-    }, 2500);
+    $(document).ready(function(){
+        $('.skills-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:true,
+                    loop:false
+                }
+            }
+        });
+    });
 
     //this is page sliding animation
 
@@ -50,5 +58,7 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop:0},300);
         return false;
     });
+
+
 
 });
