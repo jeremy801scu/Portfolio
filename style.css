@@ -303,67 +303,12 @@ nav .nav-item a{
   margin-bottom: 80px;
 }
 
-/*    skills-carousel    */
-
-#skillcar{
-  max-width: 600px;
-  max-height: 400px;
-  margin: auto;
-}
-
-.skills-carousel .item {
-  text-align: center;
-  border-start-start-radius: 80%;
-  border-start-end-radius: 30%;
-  border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 80%;
-}
-
-.skills-carousel .photo img{
-  text-align:center;
-  border-start-start-radius: 80%;
-  border-start-end-radius: 30%;
-  border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 80%;
-  background-color: antiquewhite;
-  height: 200px;
-  width: 100px;
-  border: solid;
-  border-color: black;
-}
-
-.skills-carousel .comments{
-  color: #acc8d7;
+.home-skill ul{
+  list-style-position: inside;
   font-family: Montserrat Alternates;
-  font-size: 16px;
+  color: #acc8d7;
+  font-size: 18px;
   text-align: center;
-}
-
-
-.skills-carousel .owl-dot{
-  margin-top: 20px;
-}
-
-.skills-carousel .owl-dot span {
-  background: #acc8d7!important;
-  width: 15px!important;
-  height: 15px!important;
-  margin: 5px 3px!important;
-}
-.skills-carousel .owl-dot.active span {
-  background: #507dcb!important;
-}
-
-.skills-carousel .owl-nav{
-  display: none;
-}
-
-@media only screen and (max-width: 767px){
-  #skillcar{
-    max-width: 300px;
-    max-height: 200px;
-    margin: auto;
-  }
 }
 
 /*Portfolio section*/
