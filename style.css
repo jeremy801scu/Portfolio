@@ -305,6 +305,9 @@ nav .nav-item a{
 
 .home-skill ul{
   list-style-position: inside;
+}
+
+.home-skill li{
   font-family: Montserrat Alternates;
   color: #acc8d7;
   font-size: 18px;
