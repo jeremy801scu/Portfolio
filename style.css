@@ -410,9 +410,10 @@ transform: scale(1.2);
 
 .horizontal-list li {
   margin-right: 10px;
-  border: #acc8d7 solid 1px;
+  border:solid 1px;
   padding-left: 5px;
   padding-right: 5px;
+  border-radius: 3px;
 }
 
 /*   Portfolio Mobile responsiveness   */
