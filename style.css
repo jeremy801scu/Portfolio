@@ -399,6 +399,22 @@ transform: scale(1.2);
   text-align: center;
 }
 
+.horizontal-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  color:  #acc8d7;
+  font-family: Montserrat Alternates;
+  justify-content: center;
+}
+
+.horizontal-list li {
+  margin-right: 10px;
+  border: #acc8d7 solid 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 /*   Portfolio Mobile responsiveness   */
 
 @media only screen and (max-width: 767px){
