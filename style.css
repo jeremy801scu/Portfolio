@@ -416,6 +416,18 @@ transform: scale(1.2);
   border-radius: 3px;
 }
 
+.horizontal-list a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.horizontal-list a :hover{
+  color: purple;
+  text-decoration: none;
+  transform: scale(1.3);
+  transition: transform .5s;
+}
+
 /*   Portfolio Mobile responsiveness   */
 
 @media only screen and (max-width: 767px){
