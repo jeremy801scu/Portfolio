@@ -15,7 +15,6 @@
   /*nav bar background */
 #my-nav{
     background-color: black;
-    overflow-x: hidden;
 }
 
  /* Home button in nav bar */
@@ -287,7 +286,6 @@ nav .nav-item a{
 .home-skill{
   overflow-x: hidden;
   padding-top: 70px;
-  padding-bottom: 70px;
   background-color: black;
 }
 
@@ -304,7 +302,6 @@ nav .nav-item a{
   font-size: 34px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 80px;
 }
 
 .home-skill ul{
@@ -380,6 +377,7 @@ nav .nav-item a{
 }
 .portfolio .filter-item .photo{
   overflow: hidden;
+  text-align: center;
 }
 .portfolio .filter-item .photo img {
   width: 100%;
@@ -493,7 +491,7 @@ transform: scale(1.2);
   text-align: center;
   margin-right: 2px;
   margin-left: 2px;
-  margin-top: 200px;
+
 }
 #foot-section  .social ul li a{
   display: block;
