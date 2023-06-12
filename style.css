@@ -64,19 +64,8 @@ nav .nav-item a{
   background-image: url(images/timp2.jpg);
   background-size: cover;
   background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; 
 }
 
-@media (min-width: 768px) {
-  .home-banner {
-    background-image: url('images/timp2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-}
 
 
 .text-box{
@@ -217,7 +206,7 @@ nav .nav-item a{
 }
 
 .btn-animated{
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom .5s ease-out;
   animation-fill-mode: backwards;
 }
 
