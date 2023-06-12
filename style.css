@@ -308,7 +308,7 @@ nav .nav-item a{
 /*THIS IS THE SKILLS SECTION*/
 .home-skill{
   overflow-x: hidden;
-  padding-top: 70px;
+  padding-top: 10px;
   background-color: black;
 }
 
@@ -524,6 +524,14 @@ transform: scale(1.2);
 
 
 /* social media link buttons */
+
+.social h3{
+  color: #446879;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+}
 
 #social-lin{
   color: #0077B5;
