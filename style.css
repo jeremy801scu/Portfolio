@@ -7,6 +7,9 @@
   font-family: 'Montserrat Alternates', sans-serif; 
 }
 
+body{
+  background-color: black;
+}
 
 .dropdown:hover .dropdown-menu{
     display: block;
@@ -64,8 +67,7 @@ nav .nav-item a{
   background-image: url(images/timp2.jpg);
   background-size: cover;
   background-position: top;
-  border-radius: 10%;
-  background-color: black;
+  border-radius: 50px;
 }
 
 
@@ -608,6 +610,8 @@ transform: scale(1.2);
   }
 }
 
+
+
 /*scroll to top*/
 .scrollup{
   position: fixed;
@@ -647,6 +651,8 @@ color: #446879;
 ::-webkit-scrollbar-thumb {
 color: #446879;
 }
+
+
 
 /* 
 font-family: 'Montserrat Alternates', sans-serif; 
