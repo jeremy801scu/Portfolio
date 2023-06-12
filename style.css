@@ -1,9 +1,11 @@
-/* entire page resizing*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
-  html{
-    overflow-x: hidden;
-
-  }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif; 
+}
 
 
 .dropdown:hover .dropdown-menu{
@@ -19,7 +21,7 @@
 
  /* Home button in nav bar */
 nav .nav-item .nav-link.active{
-    color:  #446879;
+    color:  rgb(68, 104, 121);
 }
   /* all other buttons in nav bar */
 nav .nav-item a{
@@ -27,7 +29,7 @@ nav .nav-item a{
     font-weight: 600px;
     font-size: 16px;
     margin-left: 15px;
-    color: antiquewhite;
+    color: rgb(250, 235, 215);
 }
 
   /* color when hoovering over links in nav bar */
@@ -39,7 +41,7 @@ nav .nav-item a{
     .navbar-brand.logo .first-name{
     font-weight: bold;
     font-family: Montserrat Alternates;
-    color: #446879;
+    color: rgb(68, 104, 121);
 }
 
       /* My last name in nav bar */
@@ -51,174 +53,188 @@ nav .nav-item a{
 
   /*  nav bar button color when viewing from phone */
 .navbar-toggler{
-    background-color: #acc8d7;
+    background-color: rgb(172, 200, 215);
 }
 
 /* home banner section */
 .home-banner {
   position: relative;
+  height: 50vh;
+  background-position: top;
+  background-image: url(images/timp2.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
 }
 
-.banner-bg {
+
+.text-box{
+  position: absolute;
+  background-color: rgba(172, 200, 215, .8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.heading-primary{
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.heading-primary-main{
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 10px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  padding-left: 10px;
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 10px;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+@keyframes moveInLeft {
+  0%{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  80%{
+      transform: translateX(10px);       
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0%{
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  80%{
+      transform: translateX(-10px);       
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0%{
+      opacity: 0;
+      transform: translateY(100px);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  padding: 15px 40px;
+  position: relative;
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white{
+  background-color: white;
+  color:  rgb(68, 104, 121);
+}
+
+.btn::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/timp2.jpg');
-  background-size: auto;
-  background-position: center center; 
-  background-attachment: fixed;
-  opacity: 1;
   z-index: -1;
+  transition: all .4s;
 }
 
-
-  /* right side of banner */
-.home-banner .right{
-  text-align: right;
-  position: relative;
-  z-index: 1;
+.btn-white::after{
+  background-color: #ffffff;
 }
 
-/* right banner image */
-.home-banner .right img{
-    max-width: 80%;
-    margin-bottom: -3px;
-    max-height: auto; 
-    position: relative;
-    z-index: 1;
-    border-radius: 100%;
-    
+.btn:hover::after{
+  transform: scalex(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
-/*left banner*/
-.home-banner .left{
-  font-family: Montserrat Alternates;
-  background-color: rgba(255, 255, 255, 0.3);
-  text-align: center;
-  border: 2px solid black;
-}
-.home-banner .left h4{
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 10px;
-}
-.home-banner .left h2{
-  font-weight: 700;
-  font-size: 34px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.home-banner .left h3{
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.home-banner .left p{
-  font-size: 16px;
-
-}
-.home-banner .left .button a{
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-  border-radius: 100%;
-  border: 0;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 10px 30px;
-  margin-bottom: 10px;
-}
-.home-banner .left .button a:hover{
-  background-color: gray;
-  color: black;
-}
-
-/*       Banner Mobile responsiveness    */
-
-@media only screen and (max-width: 767px){
-  .banner-bg {
-    background-attachment:fixed;
-    background-size: auto;
-    padding-left: 1px;
-    padding-right: 1px;
-    background-position: center -240px; 
-  }  
+.btn-animated{
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
 
 @media only screen and (max-width: 767px){
-  .home-banner .left{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 65px;
+  .btn{
+    font-size: 12px;
   }
-  .home-banner .right{
-    text-align: center;
+  .heading-primary-main{
+    font-size: 25px;
   }
-}
-
-@media only screen and (max-width: 575px){
-  .home-banner .left{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 85px;
-  }
-  .home-banner .right{
-    text-align: center;
+  .heading-primary-sub{
+    font-size: 16px;
   }
 }
 
-@media only screen and (max-width: 428px){
-  .home-banner .left{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 15px;
-  }
-  .home-banner .right{
-    text-align: center;
-  }
-}
 
-@media only screen and (max-width: 414px){
-  .home-banner .left{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-  }
-  .home-banner .right{
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 390px){
-  .home-banner .left{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 3px;
-  }
-  .home-banner .right{
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 375px){
-  .home-banner .left{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 3px;
-  }
-  .home-banner .right{
-    text-align: center;
-  }
-}
 
 /*About section*/
 .home-about{
   background-color: black;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 20px;
   overflow-x: hidden;
 }
+
+
 .home-about .right h3{
   font-family: Montserrat Alternates;
   color: #acc8d7;
@@ -229,6 +245,7 @@ nav .nav-item a{
   color: #446879;
   font-size: 34px;
   font-weight: 700;
+  font-style: italic;
 }
 .home-about .right p{
   font-family: Montserrat Alternates;
@@ -239,9 +256,13 @@ nav .nav-item a{
   text-align: center;
 }
 .home-about .left img{
-  width: 70%;
-  height: auto;
+  height: 300px;
+  align-items: center;
   border-radius: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 .home-about .contact-info table tr td{
@@ -280,6 +301,8 @@ nav .nav-item a{
 .home-about .social h3{
   font-family: Montserrat Alternates;
   color: #446879;
+  font-style: italic;
+  font-weight: 700;
 }
 
 /*THIS IS THE SKILLS SECTION*/
@@ -302,6 +325,7 @@ nav .nav-item a{
   font-size: 34px;
   font-weight: 700;
   text-align: center;
+  font-style: italic;
 }
 
 .home-skill ul{
@@ -327,6 +351,7 @@ nav .nav-item a{
   text-align: center;
   margin-bottom: 30px;
   margin-top: 30px;
+  font-style: italic;
 }
 
 .portfolio .filter ul {
