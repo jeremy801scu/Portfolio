@@ -67,7 +67,7 @@ nav .nav-item a{
   background-image: url(images/timp2.jpg);
   background-size: cover;
   background-position: top;
-  border-radius: 50px;
+  border-radius: 200px 10px 40% 10px;
 }
 
 
