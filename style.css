@@ -69,6 +69,15 @@ nav .nav-item a{
   background-size: cover; 
 }
 
+@media (min-width: 768px) {
+  .home-banner {
+    background-image: url('images/timp2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
 
 .text-box{
   position: absolute;
