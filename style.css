@@ -1,10 +1,11 @@
 /* entire page resizing*/
-
   html{
     overflow-x: hidden;
-
   }
 
+body{
+  background-color: black;
+}
 
 .dropdown:hover .dropdown-menu{
     display: block;
@@ -161,7 +162,9 @@ nav .nav-item a{
   .home-banner .left{
     margin-top: 40px;
     margin-bottom: 30px;
-    margin-left: 85px;
+    margin-left: 0; /* Remove any left margin */
+    margin-right: 0; /* Remove any right margin */
+    width: 100%; /* Ensures it takes full width in mobile view */
   }
   .home-banner .right{
     text-align: center;
@@ -218,6 +221,11 @@ nav .nav-item a{
   padding-top: 40px;
   padding-bottom: 40px;
   overflow-x: hidden;
+  max-width: 1200px; /* Set max width for content */
+  margin: 0 auto; /* Center content */
+  padding-left: 20px; /* Optional: Add padding to the left */
+  padding-right: 20px; /* Optional: Add padding to the right */
+  text-align: left; /* Or center if you prefer */
 }
 .home-about .right h3{
   font-family: Montserrat Alternates;
